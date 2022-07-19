@@ -1,0 +1,614 @@
+:root{
+    --StrongCyan-: 171, 66%, 44%;
+    --LightBlue-: 233, 100%, 69%;
+    --DarkGrayishBlue-: 210, 10%, 33%;
+    --GrayishBlue-: 201, 11%, 66%, 0.3;
+    --font-: 'Bai Jamjuree', sans-serif;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+body, div, p, b, img, a, button{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-);
+}
+
+
+/* Header Styling  */
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./bg-header-desktop.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.Header > img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.Header > b{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: var(--font-);
+    margin-bottom: 20px;
+}
+
+.Header > p{
+    margin-bottom: 30px;
+    max-width: 750px;
+    text-align: center;
+    color: hsl(var(--DarkGrayishBlue-));
+    font-size: 24px;
+    font-family: var(--font-);
+}
+
+
+.iOS{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: hsl(var(--StrongCyan-));
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-);
+}
+
+.Mac{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: hsl(var(--LightBlue-));
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-);
+}
+
+/* About Styling */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.about > strong{
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-family: var(--font-);;
+}
+
+.about > p{
+    max-width: 820px;
+    text-align: center;
+    margin-bottom: 90px;
+    color: hsl(var(--DarkGrayishBlue-));
+    font-size: 24px;
+    font-family: var(--font-);
+}
+
+.about_us{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.about_us > img{
+    margin-left: -300px;
+    margin-right: 100px;
+}
+
+.about_us_text{
+    max-width: 300px;
+}
+
+.about_us_text > b{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: var(--font-);
+    font-size: 24px;
+}
+
+.about_us_text > P{
+    margin-top: 7px;
+    margin-bottom: 30px;
+    color: hsl(var(--DarkGrayishBlue-));
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: var(--font-);
+}
+
+/* Access Styling */
+
+.Access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Access > b{
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-family: var(--font-);
+}
+
+.Access > p{
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: hsl(var(--DarkGrayishBlue-));
+    font-size: 20px;
+    font-family: var(--font-);
+}
+.Access > img{
+    width: 55%;
+}
+
+/* Tools Styling */
+
+.Tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tools > b{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: var(--font-);
+}
+
+.Tools > p{
+    margin-bottom: 30px;
+    color: hsl(var(--DarkGrayishBlue-));
+    font-size: 18px;
+    font-family: var(--font-);
+}
+
+.Tools-types{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.toolz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 310px;
+    margin: 20px;
+}
+
+.toolz > img{
+    margin-bottom: 40px;
+}
+
+.toolz > b{
+    margin-bottom: 15px;
+    font-family: var(--font-);
+    font-size: 24px;
+}
+
+.toolz > p{
+    text-align: center;
+    color: hsl(var(--DarkGrayishBlue-));
+    font-size: 16px;
+    font-family: var(--font-);
+}
+
+/* Sponsor Styling */
+
+.Sponsor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.Sponsor > img{
+    margin: 30px;
+}
+
+/* Convince Styling */
+
+.Convince{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.Convince > b{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: var(--font-);
+}
+
+.Convince > p{
+    max-width: 620px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-family: var(--font-);
+    color: hsl(var(--DarkGrayishBlue-));
+}
+
+
+/* Footer Styling */
+
+.Footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(var(--GrayishBlue-));
+    padding: 20px 150px;
+}
+.spacing{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+.spacing > div > img{
+    width: 50px;
+    margin-right: 150px;
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.footer-1 > a{
+    text-decoration: none;
+    color: hsl(var(--DarkGrayishBlue-));
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: var(--font-);
+}
+.footer-1 > a:hover{
+    color: hsl(var(--StrongCyan-));
+}
+.social > img{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:425px){
+
+    .Header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: cover;
+        width: 100%;
+    }
+    .Header > img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Header > h1{
+        text-align: center;
+        font-size: 32px;
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .Header > p{
+        font-size: 18px;
+        text-align: center;
+        max-width: 310px;
+    }
+
+    .download{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iOS, .Mac{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .about > strong{
+        font-size: 28px;
+        text-align: center;
+        max-width: 350px;
+    }
+    .about > p{
+        font-size: 18px;
+        max-width: 300px;
+        text-align: center;
+    }
+    .about_us{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .about_us > img{
+        margin: 0;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .about_us_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about_us_text > b{
+        font-size: 24px;
+        margin: 0;
+    }
+    .about_us_text > P{
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+        max-width: 290px;
+    }
+    .Access{
+        margin-bottom: 80px;
+    }
+    .Access > b{
+        font-size: 24px;
+        text-align: center;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    .Access > p{
+        font: 18px;
+        max-width: 350px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .Access > img{
+        width: 70%;
+    }
+    .Tools > b{
+        font-size: 28px;
+        text-align: center;
+        max-width: 300px;
+    }
+    .Tools > p{
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .Tools-types{
+        flex-direction: column;
+    }
+    .toolz > b{
+        font-size: 20px;
+    }
+    .toolz > p{
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 280px;
+    }
+    .Tools-types{
+        margin-bottom: 30px;
+    }
+    .Sponsor{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .Convince > b{
+        font-size: 28px;
+        text-align: center;
+        max-width: 300px;
+    }
+    .Convince > p{
+        max-width: 310px;
+    }
+    .Footer{
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 50px;
+    }
+    .spacing{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .spacing > div > img{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .footer-1{
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:320px){
+
+    .Header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: cover;
+        width: 100%;
+    }
+    .Header > img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Header > h1{
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 900;
+        padding: 0;
+    }
+
+    .Header > p:nth-child(2){
+        font-size: 18px;
+        text-align: center;
+        max-width: 310px;
+    }
+
+    .download{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iOS, .Mac{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .about > strong{
+        font-size: 28px;
+        text-align: center;
+        max-width: 350px;
+    }
+    .about > p{
+        font-size: 18px;
+        max-width: 300px;
+        text-align: center;
+    }
+    .about_us{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .about_us > img{
+        margin: 0;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .about_us_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about_us_text > b{
+        font-size: 24px;
+        margin: 0;
+    }
+    .about_us_text > P{
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+        max-width: 290px;
+    }
+    .Access{
+        margin-bottom: 80px;
+    }
+    .Access > b{
+        font-size: 24px;
+        text-align: center;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    .Access > p{
+        font: 18px;
+        max-width: 350px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .Access > img{
+        width: 70%;
+    }
+    .Tools > b{
+        font-size: 28px;
+        text-align: center;
+        max-width: 300px;
+    }
+    .Tools > p{
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .Tools-types{
+        flex-direction: column;
+    }
+    .toolz > b{
+        font-size: 20px;
+    }
+    .toolz > p{
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 280px;
+    }
+    .Tools-types{
+        margin-bottom: 30px;
+    }
+    .Sponsor{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .Convince > b{
+        font-size: 28px;
+        text-align: center;
+        max-width: 300px;
+    }
+    .Convince > p{
+        max-width: 310px;
+    }
+    .Footer{
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 50px;
+    }
+    .spacing{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .spacing > div > img{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .footer-1{
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
